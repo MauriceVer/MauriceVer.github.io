@@ -2,6 +2,28 @@
 <head>
 </head>
 <body>
+function main() {
+    var getallen = createArray(50);
+    var zoek;
+    var start;
+    var tekst;
+    
+    tekst = "";
+    for (start = 0; start <= 49; start++) {
+        getallen[start] = Math.floor(Math.random() * 99);
+        tekst = tekst + getallen[start] + "-";
+    }
+    window.alert(tekst);
+    window.alert("Typ het nummer dat je wil zoeken");
+    zoek = window.prompt('Enter a value for zoek');
+    for (start = 0; start <= 49; start++) {
+        if (getallen[start] == zoek) {
+            window.alert("ja, zit erin");
+            window.alert("op positie " + (start + 1));
+        }
+    }
+    window.alert("nee zit er niet in");
+}
 
 </body>
 
