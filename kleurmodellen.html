@@ -1,46 +1,49 @@
-<!DOCTYPE html> <!--dit is de homepage van mijn site-->
-<html> <!--dit is het html element-->
-<head><title>kleurmodellen</title>
-  <link rel="stylesheet" href="opmaak.css" type="text/css">
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster met Tekst</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .poster {
+            position: relative;
+            width: 600px;
+            height: 800px;
+            background: url('https://via.placeholder.com/600x800.png') no-repeat center center;
+            background-size: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .poster-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            color: white;
+            text-align: center;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
 <body>
 
-<ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a class="active" href="werking.computer.html">werking van de computer</a></li>
-    <li><a class="active" href="binair.html">binaire stelsel</a></li>
-    <li><a class="active" href="kleurmodellen.html">kleurmodellen</a></li>
-    <li><a class="active" href="compressietechnieken.html">compressietechnieken</a></li>
-  </ul>
-  <img src="kleurmodellen.gif" alt="compressietechnieken">
-</ul>
-<h1>inhoudsopgave</h1>
-<ul>
-  <h4>Wat zijn kleurmodellen</h4>
-  <h4>Voorbeelden</h4>
-  <h4>Waarvoor worden kleurmodellen gebruikt</h4>
-</ul>
-  <center><h1>kleurmodellen</h1>
-  <br>Kleurmodellen zijn systemen die worden gebruikt om kleuren te representeren en te beheren in verschillende toepassingen,zoals fotografie, drukwerk en digitale beeldverwerking
-  <h2>Voorbeelden:</h2>
-<h3>RGB (Rood, Groen, Blauw):</h3>
-  <br>RGB is een additief kleurmodel dat veel wordt gebruikt voor digitale weergave, zoals computermonitors, televisies en digitale camera's.
-  <br>Kleuren worden gemaakt door verschillende intensiteiten van rood, groen en blauw licht te combineren.
-<h3>CMY (Cyaan, Magenta, Geel) en CMYK (Cyaan, Magenta, Geel, Zwart):</h3>
-  <br>CMY is een subtractief kleurmodel dat vaak wordt gebruikt in drukwerk en kleurmenging met verf.
-  <br>In dit model worden kleuren gemaakt door cyaan, magenta en geel pigmenten te mengen.
-<h3>Pantone:</h3>
-  <br>Pantone is een kleurensysteem dat vaak wordt gebruikt in de grafische en drukindustrie.
-  <br>Het biedt gestandaardiseerde kleurnummers en kleurenwaaiers om consistentie in kleurweergave te waarborgen.
-<h2>Waarvoor worden kleurmodellen gebruikt</h2>
-  <br>Elk kleurmodel heeft zijn eigen toepassingen en voordelen, afhankelijk van de specifieke behoeften van een project. 
-  <br>De keuze voor een kleurmodel hangt vaak af van factoren zoals het doel van het ontwerp, de afdrukmethode en de beoogde kleurnauwkeurigheid.
-  <br><a href="https://youtu.be/cKaRxd6tdHY?si=62ncQEC1CDHj3GTU" target="_blank">"kleurmodellen filmpje"</a>
-  </center>
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2023 </p>
-        <p>Ontworpen door:<a href="https://mauricever.github.io/index.html" target="_blank">"Maurice Vermue 4H"</a></p>
-    </footer>
+    <div class="poster">
+        <div class="poster-text">
+            Maak je dromen waar!
+        </div>
+    </div>
+
 </body>
 </html>
